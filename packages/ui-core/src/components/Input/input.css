@@ -1,0 +1,7 @@
+.ds-field { display: grid; gap: var(--ds-space-2); font-family: var(--ds-font-sans); }
+.ds-field__label { color: var(--ds-color-neutral-900); font-size: var(--ds-font-size-sm); font-weight: 600; }
+.ds-input { background: var(--ds-color-neutral-0); border: 1px solid var(--ds-color-neutral-200); border-radius: var(--ds-radius-md); color: var(--ds-color-neutral-900); font: inherit; min-height: 2.5rem; padding: 0 var(--ds-space-3); }
+.ds-input:focus-visible { outline: 3px solid var(--ds-color-focus); outline-offset: 1px; }
+.ds-input--invalid { border-color: var(--ds-color-danger-600); }
+.ds-field__hint { color: var(--ds-color-neutral-700); font-size: var(--ds-font-size-sm); }
+.ds-field__error { color: var(--ds-color-danger-600); font-size: var(--ds-font-size-sm); }

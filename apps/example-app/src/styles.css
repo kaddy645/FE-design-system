@@ -1,0 +1,16 @@
+@import "@acme/ui-core/tokens.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { font-family: var(--ds-font-sans); color: var(--ds-color-neutral-900); background: var(--ds-color-neutral-50); }
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; }
+.demo { margin: 0 auto; max-width: 760px; padding: 5rem 1.5rem; }
+.demo__eyebrow { font-size: var(--ds-font-size-sm); font-weight: 700; letter-spacing: 0.08em; }
+.demo h1 { font-size: clamp(2rem, 5vw, 3.5rem); letter-spacing: -0.04em; margin: 0.75rem 0; }
+.demo p { color: var(--ds-color-neutral-700); line-height: 1.6; }
+.demo__controls, .demo__actions { display: flex; flex-wrap: wrap; gap: var(--ds-space-3); margin: var(--ds-space-6) 0; }
+.demo__field { margin: var(--ds-space-8) 0; max-width: 24rem; }
+.demo__actions { justify-content: flex-end; margin-bottom: 0; }

@@ -1,0 +1,32 @@
+{
+  "name": "ui-design-systems",
+  "private": true,
+  "packageManager": "pnpm@9.15.4",
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev --parallel",
+    "lint": "turbo run lint",
+    "test": "turbo run test",
+    "typecheck": "turbo run typecheck",
+    "test:e2e": "playwright test",
+    "test:e2e:update": "playwright test --update-snapshots",
+    "changeset": "changeset",
+    "version-packages": "changeset version",
+    "release": "changeset publish"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@axe-core/playwright": "^4.10.2",
+    "@changesets/cli": "^2.27.12",
+    "@playwright/test": "^1.50.1",
+    "eslint": "^10.0.0",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "globals": "^17.14.0",
+    "turbo": "^2.3.3",
+    "typescript-eslint": "^8.19.1",
+    "typescript": "^5.7.3"
+  }
+}

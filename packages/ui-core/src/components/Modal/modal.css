@@ -1,0 +1,30 @@
+.ds-modal__overlay {
+  align-items: center;
+  background: rgb(15 23 42 / 0.56);
+  display: flex;
+  inset: 0;
+  justify-content: center;
+  overflow-y: auto;
+  padding: var(--ds-space-4);
+  position: fixed;
+  z-index: 1000;
+}
+
+.ds-modal__content {
+  background: var(--ds-color-neutral-0);
+  border: 1px solid var(--ds-color-neutral-200);
+  border-radius: var(--ds-radius-lg);
+  box-shadow: 0 24px 64px rgb(15 23 42 / 0.24);
+  color: var(--ds-color-neutral-900);
+  font-family: var(--ds-font-sans);
+  margin: auto;
+  max-height: calc(100dvh - 2rem);
+  max-width: 32rem;
+  overflow: auto;
+  padding: var(--ds-space-6);
+  width: 100%;
+}
+
+.ds-modal__content:focus { outline: none; }
+.ds-modal__title { font-size: var(--ds-font-size-xl); margin: 0 0 var(--ds-space-2); }
+.ds-modal__description { color: var(--ds-color-neutral-700); margin: 0 0 var(--ds-space-6); }
